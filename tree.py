@@ -1,3 +1,4 @@
+# tree diagram
 class Balls:
     def __init__(self, color: str, number: int):
         self.color = color
@@ -17,7 +18,7 @@ class Box:
         self.number = sum(self.balls.values())
 
     def get_chances(self, color: str):
-        return self.balls[color] / self.number * self.chances
+        return round(self.balls[color] / self.number * self.chances, 2)
 
 
 a = Box([Balls("Red", 7), Balls("Blue", 8)], 0.9)
