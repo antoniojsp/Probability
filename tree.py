@@ -23,7 +23,10 @@ class Box:
 
 a = Box([Balls("Red", 7), Balls("Blue", 8)], 0.9)
 print(a.get_chances("Red"))
+
 b = Box([Balls("Red", 7), Balls("Blue", 3)], 0.1)
 print(b.get_chances("Red"))
 
 print(a.get_chances("Red") + b.get_chances("Red"))
+
+
