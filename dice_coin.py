@@ -2,20 +2,20 @@
 
 from random import randrange
 def dice(times:int, val:int)-> float:
-	count = 0
-	for _ in range(times):
-		 rand= randrange(0, 6)
-		 if rand == val:
-		 	count +=1
+    count = 0
+    for _ in range(times):
+         rand= randrange(0, 6)
+         if rand == val:
+            count +=1
 
-	return count/times
+    return count/times
 
 def coin(times:int)-> float:
-	suma = 0
-	for _ in range(times):
-		suma += randrange(0, 2)
+    suma = 0
+    for _ in range(times):
+        suma += randrange(0, 2)
 
 
-	return suma/times
+    return suma/times
 
-	
+
