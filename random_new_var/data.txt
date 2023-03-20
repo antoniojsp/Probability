@@ -1,0 +1,10 @@
+Aryan	2	5
+Belinda	2	3
+Cece	1	5
+Dewi	0	8
+Ewan	0	7
+Fatima	2	6
+Guy	3	6
+Hope	3	3
+Isabelle	1	5
+Jakob	0	7
