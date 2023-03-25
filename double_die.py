@@ -38,7 +38,7 @@ def n_dice(number_dice: int, times: int)->dict:
     return dict(sorted(results.items()))
 
 
-prob = n_dice(6, 10000000)
+prob = n_dice(3, 100000)
 
 import matplotlib.pyplot as plt
 
