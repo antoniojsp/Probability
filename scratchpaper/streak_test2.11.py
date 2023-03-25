@@ -1,2 +1,6 @@
-x = [i for i in range(5, 21, 3)]
-y = [0.02, 0.31, 0.03,0.11, 0.44,0.09]
+from m_standard_deviation import standard_deviation
+
+x = [-7, -4, -2, 1]
+y = [0.16, 0.29, 0.09, 0.46]
+
+print(standard_deviation(x, y))
