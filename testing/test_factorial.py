@@ -2,11 +2,11 @@ import sys
 from os_detector import get_platform
 
 platform = {"Win":'C:/Users/Antonio/PycharmProjects/Probability/',
-            "OS":'/Users/antonio/Documents/Probability/'}
+            "OS":'/Users/antonio/Documents/Probability/calculations'}
 
 sys.path.insert(0, platform[get_platform()])
 
-from calculations.factorial import factorial
+from factorial import factorial
 import unittest
 
 
