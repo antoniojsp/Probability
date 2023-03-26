@@ -1,3 +1,6 @@
+import sys
+sys.path.insert(0, '/Users/antonio/Documents/Probability/')
+
 from calculations.factorial import factorial
 import unittest
 

@@ -1,4 +1,6 @@
-from calculations.m_standard_deviation import standard_deviation
+import sys
+sys.path.insert(0, '/Users/antonio/Documents/Probability/calculations')
+from calculations.standard_deviation import standard_deviation
 
 g_1 = [i for i in range(15,21)]
 p_g_1 = [0.03, 0.07,0.17,0.28, 0.3, 0.15]
