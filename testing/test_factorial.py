@@ -6,8 +6,6 @@ platform = {"Win":'C:/Users/Antonio/PycharmProjects/Probability/',
 
 sys.path.insert(0, platform[get_platform()])
 
-platform[get_platform()]
-
 from calculations.factorial import factorial
 import unittest
 
@@ -18,3 +16,6 @@ class TestFactorial(unittest.TestCase):
             for i in data:
                 items = i.split()
                 self.assertEqual(factorial(int(items[0])), int(items[1]))
+
+if __name__ == '__main__':
+    unittest.main()

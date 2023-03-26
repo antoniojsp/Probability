@@ -1,8 +1,12 @@
 import sys
+from os_detector import get_platform
 
-# sys.path.insert(0, '/Users/antonio/Documents/Probability/')
-sys.path.insert(0, 'C:/Users/Antonio/PycharmProjects/Probability/calculations')
-from calculations.combinatory import number_combinations
+platform = {"Win":'C:/Users/Antonio/PycharmProjects/Probability/calculations/',
+            "OS":'/Users/antonio/Documents/Probability/calculations/'}
+
+sys.path.insert(0, platform[get_platform()])
+
+from combinatory import number_combinations
 import math
 import unittest
 
