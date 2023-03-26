@@ -1,8 +1,6 @@
 import sys
-
-sys.path.insert(0, '/Users/antonio/Documents/Probability/calculations')
-
-from factorial import factorial
+sys.path.append('../')
+from calculations.factorial import factorial
 
 
 def number_combinations(total: int, chosen: int) -> int:
