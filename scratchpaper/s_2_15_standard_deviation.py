@@ -1,6 +1,4 @@
-from m_standard_deviation import standard_deviation, expected_value
-from math import sqrt
-
+from calculations.m_standard_deviation import standard_deviation
 
 g_1 = [i for i in range(15,21)]
 p_g_1 = [0.03, 0.07,0.17,0.28, 0.3, 0.15]
