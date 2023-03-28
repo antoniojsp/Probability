@@ -1,5 +1,8 @@
+import sys
+sys.path.append('../')
+
 from math import sqrt
-from expected_value import expected_value
+from calculations.expected_value import expected_value
 
 
 def standard_deviation(random_var: list, prob_arr: list) -> dict:

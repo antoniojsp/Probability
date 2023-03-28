@@ -1,4 +1,7 @@
-from combinatory import number_combinations
+import sys
+sys.path.append('../')
+
+from calculations.combinatory import number_combinations
 
 
 def binomial_distribution(x: int, n: int, p: float) -> float:
@@ -22,9 +25,9 @@ def binomial_distribution_cumulative(x: int, n: int, p: float):
     """
     cumulative = 0
     for i in range(0, x + 1):
+        print(cumulative)
         cumulative += binomial_distribution(i, n, p)
 
     return cumulative
 
 
-print(binomial_distribution_cumulative(3, 5, 0.6))

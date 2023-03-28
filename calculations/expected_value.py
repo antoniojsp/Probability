@@ -1,3 +1,6 @@
+
+import sys
+sys.path.append('../')
 def expected_value(random_var: list, probability_arr: list) -> float:
     '''
     Expected value, multiply the random variables by their probabilities
