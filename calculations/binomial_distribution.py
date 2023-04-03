@@ -1,5 +1,5 @@
 from combinatory import number_combinations
-
+from graph import graph
 
 def binomial_distribution(x: int, n: int, p: float) -> float:
     """
@@ -21,10 +21,14 @@ def binomial_distribution_cumulative(x: int, n: int, p: float):
     :return: probability specific outcome
     """
     cumulative = 0
+    answer = []
     for i in range(0, x + 1):
         cumulative += binomial_distribution(i, n, p)
+        answer.append(binomial_distribution(i, n, p))
 
+    graph([i for i in range(x+1)], answer)
     return cumulative
 
+print(binomial_distribution_cumulative(1000, 1000, 0.70))
 
-print(binomial_distribution_cumulative(3, 5, 0.6))
+
