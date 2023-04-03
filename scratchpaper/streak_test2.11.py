@@ -1,5 +1,6 @@
 import sys
-sys.path.insert(0, '/Users/antonio/Documents/Probability/calculations')
+sys.path.append('../')
+
 from calculations.standard_deviation import standard_deviation
 
 x = [-7, -4, -2, 1]
