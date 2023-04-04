@@ -34,9 +34,9 @@ def area_under_curve(f, dx, end, start=0):
         # print(i, area)
         area += dx * f(i)
         answer.append(dx * f(i))
-        if area >0.5:
-            print(i)
-            break
+        # if area >0.5:
+        #     print(i)
+        #     break
         i += dx
 
     x_arr = [i for i in range(0, len(answer))]
@@ -49,7 +49,7 @@ def formula2(x):
     return 1/6*x+1/3
 
 def formula_cereal(x):
-    return x*(x/200 - 39/20)
+    return ((x**2)/200 - (39/20)*x)
 
 # print(area_under_curve(inverse_parabola, 1.414, 0.00001))
 print(area_under_curve(formula_cereal, 0.00001, 410, 390))
