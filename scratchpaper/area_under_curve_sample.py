@@ -30,7 +30,7 @@ def formula2(x):
 
 
 def formula_cereal(x):
-    return ((x ** 2) / 200 - (39 / 20) * x)
+    return (x ** 2) / 200 - (39 / 20) * x
 
 
 print(area_under_curve(formula_cereal, 0.00001, 410, 390))
