@@ -1,6 +1,7 @@
 
 import sys
 sys.path.append('../')
+from calculus.integral import area_under_curve
 def expected_value(random_var: list, probability_arr: list) -> float:
     '''
     Expected value, multiply the random variables by their probabilities
@@ -14,3 +15,8 @@ def expected_value(random_var: list, probability_arr: list) -> float:
         result += i * j
 
     return result
+
+def expected_value_continuous(f, end:int, start:int=0) ->float:
+    var = lambda x: x*f(x)
+    return area_under_curve(var, 0.0001, end, start)
+
