@@ -23,3 +23,5 @@ def standard_deviation2(f, end, start=0):
     return sqrt(expected_val_square - (expected_val ** 2))
 
 
+print(standard_deviation2(lambda x: (x/200)-(39/20), 410, 390))
+print(standard_deviation(lambda x: (x/200)-(39/20), 410, 390))
