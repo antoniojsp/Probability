@@ -7,5 +7,5 @@ def sigma(f, lower, upper, arr)->float:
     return result
 
 print("###RESULT###")
-func_2 = lambda x: 2*(x)**2
+func_2 = lambda x: 2*(x**2)
 print(sigma(func_2, 1, 3, arr_x))
